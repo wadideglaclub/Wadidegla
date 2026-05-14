@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات أعضاء نادي وادي دجلة</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+    <title>خدمات أعضاء نادي وادي دجلة - تجميد العضوية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
     <style>
         :root {
             --wd-yellow: #ffcc00;
             --wd-black: #1a1a1a;
             --wd-gray: #f8f9fa;
             --wd-dark-gray: #333;
-            --gold: #D4AF37; 
-            --gold-light: #F4E4B0; 
+            --gold: #D4AF37;
+            --gold-light: #F4E4B0;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          
             background-color: var(--wd-gray);
             margin: 0;
-            padding: 10px;
+            padding: 5px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,7 +29,7 @@
             max-width: 800px;
             width: 100%;
             background: white;
-            border-radius:20px;
+            border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             overflow: hidden;
             border-top: 10px solid var(--wd-yellow);
@@ -57,7 +56,7 @@
         }
 
         .content-area {
-            padding: 13px;
+            padding: 30px;
         }
 
         .card {
@@ -68,11 +67,11 @@
             border: 1px solid #eee;
             transition: all 0.3s ease;
         }
-
         .card:hover {
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             border-color: var(--wd-yellow);
         }
+        
 
         .card h3 {
             color: var(--wd-black);
@@ -101,9 +100,7 @@
             font-size: 16px;
         }
 
-        li:last-child {
-            border-bottom: none;
-        }
+        li:last-child { border-bottom: none; }
 
         li::before {
             content: "●";
@@ -111,7 +108,7 @@
             font-size: 14px;
         }
 
-       .show-auth-btn {
+        .show-auth-btn {
             background: var(--wd-yellow);
             color: var(--wd-black);
             border: 2px solid var(--wd-black);
@@ -126,47 +123,22 @@
             display: block;
         }
 
-        .show-auth-btn:hover {
-            background: var(--wd-yellow);
-            color: var(--wd-black);
-        }
-
         #authSection {
             display: none;
             width: 100%;
             max-width: 800px;
             padding-bottom: 15px;
             animation: fadeIn 0.5s ease;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .auth-card { 
-            background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
+        
+             .auth-card { 
+            background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);0a 100%);
             border: 5px solid var(--gold); 
-            border-radius: 25px; 
-            padding: 15px;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.5);
-              font-family: 'Segoe UI', sans-serif;
-        }
-      
-
-        .text-box {
-            background: #000; 
-            color: #F4E4B0; 
-            padding: 15px;
             border-radius: 15px; 
-            margin-bottom: 20px; 
-            white-space: pre-line;
-            border-right: 5px solid var(--gold); 
-            line-height: 1.8;
-            font-size: 1.1rem;
-            text-align: right;
-        }
+            padding: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            font-family: 'Segoe UI', sans-serif;
 
+        
         /* تثبيت حجم الخط لجميع الإيميلات عند 0.95rem */
         #selectedEmail {
             font-size: 0.95rem;
@@ -176,7 +148,7 @@
         .select-container {
             margin-bottom: 10px;
             text-align: right;
-        }
+        }        }
 
         .select-label {
             color: var(--gold);
@@ -184,7 +156,8 @@
             margin-bottom: 10px;
             font-weight: bold;
             font-size: 1rem;
-        }
+            
+            }
 
         .custom-select {
             width: 100%;
@@ -204,6 +177,22 @@
             background-size: 20px;
         }
 
+        .text-box {
+            background: #000; 
+            color: #F4E4B0; 
+            padding: 15px;
+            border-radius: 15px; 
+            margin-bottom: 20px; 
+            white-space: pre-line;
+            border-right: 5px solid var(--gold); 
+            line-height: 1.8;
+            font-size: 1.1rem;
+            text-align: right;
+        }
+
+        #selectedEmail { 
+        font-size: 0.95rem; display: inline-block; }
+
         .copy-btn { 
             width: 100%;
             padding: 15px; 
@@ -216,7 +205,6 @@
             cursor: pointer; 
             transition: 0.3s;
         }
-
         .copy-btn:hover {
             transform: scale(1.02);
             filter: brightness(1.1);
@@ -228,65 +216,41 @@
 <div class="container">
     <div class="header">
         <h1>نادي وادي دجلة</h1>
-        <p>طلب انضمام المنتسبين</p>
+        <p> إجراءات تجميد العضوية</p>
     </div>
 
     <div class="content-area">
         <div class="card">
-<h3 style="font-size: 20px;"> 📄أولاً: أصول المستندات المطلوبة</h3>
+            <h3>📄 أولاً: المستندات المطلوبة</h3>
             <ul>
-                <li> بطاقة الرقم القومي للمنتسب.</li>
-                <li> شهادة ميلاد الزوج أو الزوجة (في حالة كون المنتسب هى الأم).</li>
+                <li>صورة من الإقامة السارية لإثبات تواجد العضو الأساسى خارج البلاد.</li>
+                <li>صورة او اصل من جواز السفر (الباسبور) إذا كان العضو الأساسي يحمل جنسية أجنبية.</li>
             </ul>
         </div>
 
         <div class="card">
-            <h3>🤝 ثانياً: شروط الانضمام</h3>
+            <h3>🤝 ثانياً: شروط تجميد العضوية</h3>
             <ul>
-                <li>حضور العضو الأساسي بشخصه لإتمام إجراءات الإضافة.</li>
-                <li>الا يقل عمر المنتسبين عن 60  عاماً واذا كان اقل من 60 عاماً يتم احضار برنت تأمينى (مختوم بختم النسر) يفيد بأنهم غير مُؤمن عليهم.</li>
-                <li>في حال تواجد العضو الأساسي خارج البلاد، يتم عمل تفويض عبر البريد الإلكتروني مع إرفاق صورة إقامة سارية.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-           <h3 style="font-size: 18px;">👨‍👩‍👧 المنتسبون الذين سيتم إضافتهم هم: </h3>
-            <ul>
-                <li> والد ووالدة العضو الأساسي او العضو التابع.</li>
-               
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>📌 ملاحظات هامة</h3>
-            <ul>
-                <li>يتم احتساب رسوم إضافة ابن العضو التابع كمنتسب وفقًا لترتيبه.</li>
-                <li>في حالة إضافة أخت العضو الأساسي، يتم احتسابها كمنتسب ثانى.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h3>⚠️ شروط إضافة الأخت</h3>
-            <ul>
-                <li>وفاة الأب (مع تقديم شهادة الوفاة).</li>
-                <li>تقديم برنت تأمينى (مختوم بختم النسر ) يفيد بأنها غير مُؤمن عليها.</li>
-                <li>أن تكون غير متزوجة (مع تقديم قيد فردي).</li>
-                <li>أن يكون محل الإقامة مطابق بعنوان العضو الأساسي.</li>
+                <li><strong> </strong> يتم تجميد العضوية في حالة واحدة فقط وهي سفر العضو الأساسي خارج جمهورية مصر العربية.</li>
+                <li><strong></strong></strong> الحد الأقصى لفترة التجميد هى 5 سنوات متصلة، ويتم تحديد المدة بناءً على تاريخ انتهاء الإقامة السارية أو جواز السفر الأجنبي.</li>
+                <li><strong></strong> بعد انتهاء فترة التجميد (5 سنوات)، يلزم تجديد العضوية وسداد الاشتراكات أولاً قبل إمكانية تقديم طلب تجميد آخر.</li>
+                <li><strong> </strong> في حال عدم تواجد العضو الأساسي بنفسه، يتم عمل تفويض رسمي وإرساله عبر البريد الإلكتروني، مرفقاً به صورة من الإقامة السارية لإثبات تواجده خارج مصر.</li>
+                <li><strong></strong> يتم تجميد العضوية بالكامل لجميع أفراد الأسرة، ولا يُسمح باستخدام النادي خلال فترة التجميد.</li>
             </ul>
         </div>
     </div>
 </div>
 
-<button class="show-auth-btn" onclick="toggleAuth()">📝 عرض صيغة التفويض</button>
+<button class="show-auth-btn" onclick="toggleAuth()">📋 عرض صيغة التفويض</button>
 
 <div id="authSection">
     <div class="auth-card">
-        <div style="font-size: 1.5rem; color: var(--gold); margin-bottom: 15px; font-weight: bold; text-align: center;">🧑‍🦳🧓  إضافة منتسبين</div>
+        <div style="font-size: 1.5rem; color: var(--gold); margin-bottom: 15px; font-weight: bold; text-align: center;">❄️ تجميد العضوية</div>
         
         <div class="select-container">
             <label class="select-label">اختر فرع النادي لإرسال الميل:</label>
             <select id="emailSelector" class="custom-select" onchange="updateEmail()">
-                           <option value="membership.maadi@wadidegla.com"> المعادي</option>
+                               <option value="membership.maadi@wadidegla.com"> المعادي</option>
                 <option value="membership.october@wadidegla.com"> اكتوبر1 (مول مصر )</option>
      
                 <option value="membership.newoctober@wadidegla.com"> أكتوبر 2 (الحى الاول)</option>
@@ -303,17 +267,16 @@
             </select>
         </div>
 
-        <div class="text-box" id="addAffiliateText">أفوض انا /
+        <div class="text-box" id="freezeText">أفوض انا /
 اسم المفوض اليه /
-بإضافة (اسم المنتسب) ........ 
-بصفتي (والد/والدة/أخت) ........
-على عضويتي رقم ........... 
-مرفق مع الميل صورة من الإقامة سارية
+بتجميد عضويتى رقم ...........
+ لمدة ............
+مرفق مع الميل صورة من الاقامه ساريه 
 
 البريد الإلكتروني: 
 <span id="selectedEmail">membership.october@wadidegla.com</span></div>
 
-        <button class="copy-btn" onclick="copyText('addAffiliateText',this)">📋 نسخ نموذج التفويض</button>
+        <button class="copy-btn" onclick="copyText('freezeText',this)">📋 نسخ نموذج التفويض</button>
     </div>
 </div>
 

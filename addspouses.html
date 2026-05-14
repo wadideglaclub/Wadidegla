@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات أعضاء نادي وادي دجلة</title>
+    <style>
+        :root {
+            --wd-yellow: #ffcc00; /* لون وادي دجلة الذهبي */
+            --wd-black: #1a1a1a;
+            --wd-gray: #f8f9fa;
+            --wd-dark-gray: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--wd-gray);
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border-top: 10px solid var(--wd-yellow);
+        }
+
+        .header {
+            background: var(--wd-black);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: var(--wd-yellow);
+        }
+
+        .header p {
+            margin: 10px 0 0;
+            opacity: 0.9;
+            font-size: 18px;
+        }
+
+        .content-area {
+            padding: 13px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px; /* لجعل العناصر تحت بعضها */
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-color: var(--wd-yellow);
+        }
+
+        .card h3 {
+            color: var(--wd-black);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 2px solid var(--wd-yellow);
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .card h3 span {
+            background: var(--wd-yellow);
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0;
+        }
+
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f1f1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--wd-dark-gray);
+            font-size: 16px;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        li::before {
+            content: "●";
+            color: var(--wd-yellow);
+            font-size: 14px;
+        }
+
+        /* تنسيق زر التحميل */
+        .footer-action {
+            text-align: center;
+            padding: 40px 20px;
+            background: #fdfdfd;
+            border-top: 1px solid #eee;
+        }
+
+        .pdf-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--wd-black);
+            color: var(--wd-yellow);
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            border: 2px solid var(--wd-yellow);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .pdf-button:hover {
+            background: var(--wd-yellow);
+            color: var(--wd-black);
+            transform: scale(1.05);
+        }
+
+        .pdf-button svg {
+            fill: currentColor;
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>نادي وادي دجلة</h1>
+        <p>طلب انضمام الأزواج على (عضوية عادية)</p>
+    </div>
+
+    <div class="content-area">
+        <div class="card">
+          <h3 style="font-size: 20px;"> 📄أولاً: أصول المستندات المطلوبة</h3>
+            <ul>
+                <li> بطاقة الرقم القومي للزوج أو الزوجة</li>
+                <li> المؤهل الدراسي</li>
+                <li> وثيقة الزواج</li>
+                <li>صورة شخصية حديثة</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>🤝 ثانياً: شروط الانضمام</h3>
+            <ul>
+                <li>يُشترط حضور العضو الأساسي شخصيًا لاستكمال إجراءات الإضافة، وذلك برفقة الزوج أو الزوجة.</li>
+                <li>في حالة إلغاء عضوية الزوجة الأولى بسبب الطلاق أو الوفاة، يجوز إضافة الزوجة الثانية بديلة لها على العضوية وفقًا للوائح.</li>
+            </ul>
+        </div>
+    </div>
+
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
+
